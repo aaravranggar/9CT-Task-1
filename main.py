@@ -1,6 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# Load your dataset
 df = pd.read_csv("naplan_school_data.csv")
 
 def show_data_table():
@@ -14,6 +15,7 @@ def show_line_graph():
     plt.plot(df["School"], df["Numeracy"], marker="o", label="Numeracy")
     plt.plot(df["School"], df["Reading"], marker="o", label="Reading")
     plt.plot(df["School"], df["Writing"], marker="o", label="Writing")
+
     plt.title("Year 9 NAPLAN Scores Across Selected NSW Schools")
     plt.ylabel("NAPLAN Score")
     plt.xticks(rotation=45)
