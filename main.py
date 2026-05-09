@@ -4,7 +4,9 @@ import matplotlib.pyplot as plt
 # Load your dataset
 df = pd.read_csv("naplan_school_data.csv")
 def hypothesis():
-    print("Students that go to higher ranked NSW high schools achieve higher NAPLAN Numeracy scores than Reading and Writing scores, suggesting that these schools demonstrate stronger performance in mathematics compared to literacy subjects.")
+    print("Hypothesis:")
+    print("Students that go to higher ranked NSW high schools achieve higher NAPLAN Numeracy scores than Reading and Writing scores,") 
+    print("suggesting that these schools demonstrate stronger performance in mathematics compared to literacy subjects.")
 def show_data_table():
     print("\n--- DATA TABLE ---")
     print(df.to_string(index=False))
