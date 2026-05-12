@@ -57,8 +57,9 @@ def menu():
         print("2. Show Data Table")
         print("3. Open Line Graph")
         print("4. Mean/Average for Numeracy")
-        print("5. School ranking by Year 9 Naplan Scores")
-        print("6. Exit")
+        print("7. School ranking by Year 9 Naplan Scores")
+        print("8. School ranking by HSC Scores")
+        print("9. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -70,9 +71,12 @@ def menu():
              show_line_graph()
         elif choice =="4":
             average_mean()
-        elif choice =="5":
-            print(" 1. James Ruse Agriculture High School ")
-        elif choice == "6":
+        
+        elif choice =="7":
+            print(" \n Naplan Score Rankings \n 1. James Ruse Agriculture  \n 2. North Sydney Boys \n 3. North Sydney Girls \n 4. Noramnhurst Boys \n 5. Sydney Grammar \n")
+        elif choice == "8":
+            print(" \n HSC Score Rankings \n 1. North Sydney Boys \n 2. James Ruse Agriculture \n 3. Sydney Grammar \n 4. North Sydney Girls \n 5. Normanhurst Boys\n" )
+        elif choice == "9":
             print("Exiting program...")
             break
         else:
