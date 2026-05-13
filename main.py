@@ -50,7 +50,7 @@ def average_mean():
 
  # Final #
 
-def menu():
+dcef menu():
     while True:
         print(" MENU ")
         print("1. Hypothesis")
