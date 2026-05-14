@@ -17,7 +17,7 @@ def show_datatable():
 
 
 
-# Line graph #
+# Line graph matplotlib visual representation #
 def show_linegraph():
     print("Opening graph   ..  ")
     plt.figure(figsize=(12,6))
@@ -59,14 +59,14 @@ def average_mean():
     print()
 
 
- # Final code fro output 
+ # Final code for output 
 
 def menu():
     while True:
-        print(" MENU ")
+        print(" Menu ")
         print("1. Hypothesis")
-        print("2. Show Data Table")
-        print("3. Open Line Graph")
+        print("2. Data Table")
+        print("3. Line Graph Visual representation")
         print("4. Average for each subject")
         print("5. School ranking by Year 9 Naplan Scores")
         print("6. School ranking by HSC Scores")
