@@ -1,8 +1,13 @@
-import pandas as pd
-import matplotlib.pyplot as plt
+import pandas as panda
+import matplotlib.pyplot as graph
+import os
 
+data  = panda.read_csv("naplan_school_data.csv")
+
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
 # My hypothesis #
-df = pd.read_csv("naplan_school_data.csv")
 def hypothesis():
     print("Hypothesis:")
     print("Students that go to higher ranked NSW high schools achieve higher NAPLAN Numeracy scores than Reading and Writing scores,") 
@@ -12,7 +17,7 @@ def hypothesis():
 # Data table#
 def show_datatable():
     print("\n    DATA TABLE    ")
-    print(df.to_string(index=False))
+    print(data.to_string(index=False))
     print()
 
 
@@ -20,43 +25,59 @@ def show_datatable():
 # Line graph matplotlib visual representation #
 def show_linegraph():
     print("Opening graph   ..  ")
-    plt.figure(figsize=(12,6))
+    graph.figure(figsize=(12,6))
 
 
-    plt.plot(df["School"], df["Numeracy"], marker="o", label="Numeracy")
-    plt.plot(df["School"], df["Reading"], marker="o", label="Reading")
-    plt.plot(df["School"], df["Writing"], marker="o", label="Writing")
+    graph.plot(data["School"], data["Numeracy"], marker="o", label="Numeracy")
+    graph.plot(data["School"], data["Reading"], marker="o", label="Reading")
+    graph.plot(data["School"], data["Writing"], marker="o", label="Writing")
    
 
-    plt.title("Year 9 NAPLAN Scores Across Selected NSW Schools")
+    graph.title("Year 9 NAPLAN Scores Across Selected NSW Schools")
    
-    plt.ylabel("NAPLAN Score")
+    graph.ylabel("NAPLAN Score")
     
 
-    plt.grid(True, linestyle='--', alpha=0.6)
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
+    graph.grid(True, linestyle='--', alpha=0.6)
+    graph.legend()
+    graph.tight_layout()
+    graph.show()
+
+
 
 # the average
 def average_mean():
     print("\nAverage Scores")
 
+
+
+
+
+
 # Numeracy average
-    numeracy_average = df["Numeracy"].mean()
+    numeracy_average = data["Numeracy"].mean()
     print("Numeracy Average:", round(numeracy_average, 2))
 
+
+
 # Reading average
-    reading_average = df["Reading"].mean()
+    reading_average = data["Reading"].mean()
     print("Reading Average:", round(reading_average, 2))
 
+
+
 # Writing average for each school combined
-    writing_average = df["Writing"].mean()
+    writing_average = data["Writing"].mean()
     print("Writing Average:", round(writing_average, 2))
 
 
 
-    print()
+
+
+
+
+
+
 
 
  # Final code for output 
@@ -75,22 +96,46 @@ def menu():
         choice = input("Enter your choice: ")
 
         if choice == "1":
+            clear_screen()
             hypothesis()
-        elif choice == "2":
-            show_datatable()
-        elif choice == "3":
-             show_linegraph()
-        elif choice =="4":
-            average_mean()
-        elif choice =="5":
-            print(" \n Naplan Score Rankings \n 1. James Ruse Agriculture  \n 2. North Sydney Boys \n 3. North Sydney Girls \n 4. Noramnhurst Boys \n 5. Sydney Grammar \n")
-        elif choice == "6":
-            print(" \n HSC Score Rankings \n 1. North Sydney Boys \n 2. James Ruse Agriculture \n 3. Sydney Grammar \n 4. North Sydney Girls \n 5. Normanhurst Boys\n" )
-        elif choice == "7":
-            print("Exiting program\n You have succesfully exited the program.")
 
+        elif choice == "2":
+            clear_screen()
+            show_datatable()
+
+        elif choice == "3":
+            clear_screen()
+            show_linegraph()
+
+        elif choice == "4":
+            clear_screen()
+            average_mean()
+
+        elif choice == "5":
+            clear_screen()
+            print("\n Naplan Score Rankings")
+            print(" 1. James Ruse Agriculture")
+            print(" 2. North Sydney Boys")
+            print(" 3. North Sydney Girls")
+            print(" 4. Normanhurst Boys")
+            print(" 5. Sydney Grammar\n")
+
+        elif choice == "6":
+            clear_screen()
+            print("\n HSC Score Rankings")
+            print(" 1. North Sydney Boys")
+            print(" 2. James Ruse Agriculture")
+            print(" 3. Sydney Grammar")
+            print(" 4. North Sydney Girls")
+            print(" 5. Normanhurst Boys\n")
+
+        elif choice == "7":
+            clear_screen()
+            print("Exiting program\nYou have successfully exited the program.")
             break
+
         else:
+            clear_screen()
             print("Invalid choice. Try again.\n")
 
 menu()
