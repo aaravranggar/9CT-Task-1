@@ -104,7 +104,3 @@ The pmi reflection highlighted that the user interface is a major strength, as i
 In terms of improvements, expanding the dataset and adding more analysis options such as filtering, sorting, having an option where u can add results or comparing schools would significantly enhance the program’s usefulness. Additional visualisations like bar charts or scatter plots could also make the data easier to interpret for others and include a type of variety.
 
 Overall, the project achieved its goals and produced a working solution that is functional, user friendly, and reliable. With more data and extended features, it can be very well used adn has rooms for further development.
-<<<<<<< HEAD
-=======
-
->>>>>>> 60efebbff9e9362b66baf54823ba66a9b6cc0bdb
