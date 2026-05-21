@@ -1,3 +1,5 @@
+import os
+import platform
 from data_module import (
     hypothesis,
     show_datatable,
@@ -6,20 +8,35 @@ from data_module import (
     naplan_rankings,
     hsc_rankings
 )
+ 
 
+def clear_screen():
+    
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+
+
+# The Main stuff
 def menu():
     while True:
-        print(" Menu ")
-        print("1. Hypothesis")
-        print("2. Data Table")
-        print("3. The Line Graph Visual representation")
-        print("4. Average for each subject")
-        print("5. School ranking by Year 9 Naplan Scores")
-        print("6. School ranking by HSC Scores")
-        print("7. Exit")
+ 
+        print(" ---------------------------------------------")
+        print(" | Menu                                      |")
+        print(" | 1. Hypothesis                             |")
+        print(" | 2. Data Table                             |")
+        print(" | 3. The Line Graph Visual representation   |")
+        print(" | 4. Average for each subject               |")
+        print(" | 5. School ranking by Year 9 Naplan Scores |")
+        print(" | 6. School ranking by HSC Scores           |")
+        print(" | 7. Exit                                   |")
+        print(" ---------------------------------------------")
+    
 
         choice = input("Enter your choice: ")
-
+        clear_screen() 
         if choice == "1":
             hypothesis()
         elif choice == "2":

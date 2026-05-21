@@ -3,16 +3,26 @@ import matplotlib.pyplot as plt
 
 df = pd.read_csv("naplan_school_data.csv")
 
+
+# hypothesis
 def hypothesis():
     print("Hypothesis:")
     print("Students that go to higher ranked NSW high schools achieve higher NAPLAN Numeracy scores than Reading and Writing scores,")
     print("suggesting that these schools demonstrate stronger performance in mathematics compared to literacy subjects.")
 
+
+
+
+# yhe data table with matplotlib
 def show_datatable():
     print("\n    DATA TABLE    ")
     print(df.to_string(index=False))
     print()
 
+
+
+
+# the linegraph
 def show_linegraph():
     print("Opening graph...")
     plt.figure(figsize=(12, 6))
@@ -28,6 +38,11 @@ def show_linegraph():
     plt.tight_layout()
     plt.show()
 
+
+
+
+
+# Average for each subject
 def average_mean():
     print("\nAverage Scores")
 
@@ -42,6 +57,12 @@ def average_mean():
 
     print()
 
+
+
+
+
+
+# Naplna ranking
 def naplan_rankings():
     print("\nNaplan Score Rankings")
     print("1. James Ruse Agriculture")
@@ -50,6 +71,12 @@ def naplan_rankings():
     print("4. Normanhurst Boys")
     print("5. Sydney Grammar\n")
 
+
+
+
+
+
+# Hsc Ranking
 def hsc_rankings():
     print("\nHSC Score Rankings")
     print("1. North Sydney Boys")
