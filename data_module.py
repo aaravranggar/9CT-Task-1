@@ -7,7 +7,7 @@ df = pd.read_csv("naplan_school_data.csv")
 # hypothesis
 def hypothesis():
     print("Hypothesis:")
-    print("Students that go to higher ranked NSW high schools achieve higher NAPLAN Numeracy scores than Reading and Writing scores,")
+    print("Students that go to higher ranked nsw high schools achieve higher Naplan numeracy scores than reading and writing scores,")
     print("suggesting that these schools demonstrate stronger performance in mathematics compared to literacy subjects.")
 
 
@@ -15,7 +15,7 @@ def hypothesis():
 
 # yhe data table with matplotlib
 def show_datatable():
-    print("\n    DATA TABLE    ")
+    print("\n    Data Table    ")
     print(df.to_string(index=False))
     print()
 
@@ -31,8 +31,8 @@ def show_linegraph():
     plt.plot(df["School"], df["Reading"], marker="o", label="Reading")
     plt.plot(df["School"], df["Writing"], marker="o", label="Writing")
 
-    plt.title("Year 9 NAPLAN Scores Across Selected NSW Schools")
-    plt.ylabel("NAPLAN Score")
+    plt.title("Year 9 naplan scores across selected NSW Schools")
+    plt.ylabel("Naplan Score")
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.legend()
     plt.tight_layout()
