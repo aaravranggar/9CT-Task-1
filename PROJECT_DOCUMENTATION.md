@@ -65,3 +65,35 @@ The naplan data analysis program is designed to help users explore and understan
 |  Writing | int/float| NNN                | Year 9 NAPLAN Writing score | 610 | Must be a number between 0–1000 |
 |   Year   | int      | YYYY               | Year the data was recorded | 2023 | Must be a valid year |
 |   Rank   | int      | NN                 | Ranking based on performance | 1 | Must be a positive whole number |
+
+
+### Phase 4: Testing and Evaluating
+
+#### Analyse and Conclude
+
+After completing the development of my naplan data analysis program, i carried out a series of tests to check whether each feature worked as intended. Everytime i did a test the user interface worked as it showed data table, opend graph for a visual representationn and calculated the correct averages. I think that in this user interface the user cna get a good understanding of naplan scores vs school rankings.
+
+Using my pmi reflection, i analysed the strengths and weaknesses of the solution. The clean and polished user interface made the program easy to navigate, which improved the overall user experience. However, the dataset was quite small, which limited the depth of the insights the program could generate. This meant that while the program functioned correctly, the conclusions drawn from the data were not as detailed or reliable as they could be with a larger dataset.
+
+From the testing and pmi analysis, i concluded that the program meets the core requirements and performs all intended functions accurately. The main limitation is not the program itself, but the scope of the data available, which affects the strength of the analysis. Expanding the dataset in the future would allow the program to produce more meaningful and precise results.
+
+---
+
+#### Evaluate Your Project
+
+Overall, the project was successful in meeting the functional and non functional requirements. Functionally, the program loads the data it should, displays tables that are meant to be displayed, generates graphs, calculates averages, and shows different types of rankings exactly as i expected them to. Non functionally, it is easy to use, visually clear as it is spaced out, Easy to read the code and what part does what with labeling and reliable during testing.
+
+
+Evaluator for the plus minus implication: mrigaank
+Plus- The user interface looks very clean and polished and provides a variety of options.
+minus - the option and dataset is a bit short, this may reduce the depth and accuracy of the insights generated. 
+Implication - In the future expanding the available data sources and analysis options could significantly improve the reliability and precision of the results.
+
+
+
+The pmi reflection highlighted that the user interface is a major strength, as it is simple, organised, and visually clean. This makes the program accessible even for users with limited technical experience. The main weakness identified was the limited dataset, which reduces the accuracy and depth of the insights produced. This does not affect the program’s functionality, but it does impact the quality of the analysis.
+
+In terms of improvements, expanding the dataset and adding more analysis options such as filtering, sorting, having an option where u can add results or comparing schools would significantly enhance the program’s usefulness. Additional visualisations like bar charts or scatter plots could also make the data easier to interpret for others and include a type of variety.
+
+Overall, the project achieved its goals and produced a working solution that is functional, user friendly, and reliable. With more data and extended features, it can be very well used adn has rooms for further development.
+
